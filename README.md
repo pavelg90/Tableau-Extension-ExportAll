@@ -1,5 +1,24 @@
-# Tableau-Extension-ExportData
+# Tableau Extension ExportAll
 
-No matter how much you try to convince them, there will always be some users who want to reduce your beautiful Tableau charts to a table of numbers in Excel. So if they're going to do it anyway, you may as well give them a simple, controlled way, generating one Excel workbook and not a bunch of CSVs.
+This repository contains the code for the Tableau Extension ExportAll, a Tableau extension that allows exporting data from a Tableau dashboard. This version of the repository is designed to run in a Docker container for easy setup and deployment.
 
-With the Export All extension for Tableau Server you can place a simple button onto your dashboard, choose which sheets & columns are exported, and with one click your users can download a clean & tidy Excel workbook.
+## Prerequisites
+
+- Docker
+- Docker Compose
+- Node.js (for local development)
+
+## Getting Started
+
+1. Clone the repository to your local machine:
+2. Change to the directory that contains the cloned repository:
+`cd Tableau-Extension-ExportAll`
+3. Build the Docker image and start the container: `docker-compose up --build`
+
+Once the container is running, the Tableau Extension ExportAll application will be available at `http://localhost:8080/`.
+
+## Using the Extension
+1. Open a Tableau dashboard.
+2. From the menu, select "Extensions" > "Extension Gallery".
+3. Click on "My Extensions" and then "Add an Extension".
+4. Enter the URL http://localhost:8080 and click "Add".
