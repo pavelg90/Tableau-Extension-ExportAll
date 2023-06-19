@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import './DesktopExport.css';
-// import { exportToExcel } from '../func/func';
+ import { exportToExcel } from '../func/func';
 
 // Declare this so our linter knows that tableau is a global object
 /* global tableau */
@@ -21,17 +21,17 @@ function DesktopExport() {
       let sheetSettings = tableau.extensions.settings.get('selectedSheets');
 
       if (sheetSettings && sheetSettings != null) {
-        // console.log('[DesktopExport.js] Existing Sheet Settings Found', sheetSettings);
-        // const meta = JSON.parse(sheetSettings);
-        // exportToExcel(meta, 'desktop')
-        //   .then((blob) => {
-        //     navigator.webkitPersistentStorage.requestQuota (
-        //         blob.byteLength, function(grantedBytes) {
-        //             window.webkitRequestFileSystem(window.PERSISTENT, grantedBytes, onInitFs, handleError);
-        //
-        //         }, function(e) { console.log('Error', e); }
-        //     );
-        //   });
+         console.log('[DesktopExport.js] Existing Sheet Settings Found', sheetSettings);
+         const meta = JSON.parse(sheetSettings);
+         exportToExcel(meta, 'desktop')
+           .then((blob) => {
+             navigator.webkitPersistentStorage.requestQuota (
+                 blob.byteLength, function(grantedBytes) {
+                     window.webkitRequestFileSystem(window.PERSISTENT, grantedBytes, onInitFs, handleError);
+
+                 }, function(e) { console.log('Error', e); }
+             );
+           });
       }
 
     });

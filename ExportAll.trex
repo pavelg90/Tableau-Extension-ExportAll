@@ -4,10 +4,10 @@
     <default-locale>en_US</default-locale>
     <name resource-id="name"/>
     <description>Export Summary Data to Excel</description>
-    <author name="Craig Bloodworth" email="craig.bloodworth@theinformationlab.co.uk" organization="The Information Lab" website="https://www.theinformationlab.co.uk"/>
+    <author name="Craig Bloodworth (changed by Pavel G.)" email="craig.bloodworth@theinformationlab.co.uk" organization="For SIT" website="https://www.sitqad.co.il/"/>
     <min-api-version>1.0</min-api-version>
     <source-location>
-      <url>https://exportallextension.theinformationlab.io</url>
+      <url>http://localhost:8080</url>
     </source-location>
     <icon>iVBORw0KGgoAAAANSUhEUgAAAMAAAADAAgMAAAAvsoSUAAAACVBMVEUAAAAAAAAAAACDY+nAAAAAA3RSTlMA/4CE6rqMAAAAoUlEQVR4Ae3PoRUCMQDAUN65DnIj9R6SUViCfcFGpXXwSHzEv1VV/UbzU0NDQ8NqDQ0NDQ0NDQ0NDQ2viS4dTg53HQaHhw4Hh+cmggRHkOAIEhxBgiNIcAQJjiDBESQ4ggRHkOAIEHYQJDiCBEeQ4AgSHEGCI0hwBAirCBIcQYIjSHAECd4AYQ1BgiNI8E4SvEGCd2wQqmpKDQ3/NFRVfUlvNddxSLdUkP4AAAAASUVORK5CYII=</icon>
     <context-menu>
